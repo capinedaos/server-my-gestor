@@ -103,9 +103,6 @@ const login = catchAsync(async (req, res, next) => {
     expiresIn: "360d",
   });
 
-  console.log("token login");
-  console.log(token);
-
   // Send response
   res.status(200).json({
     status: "success",
